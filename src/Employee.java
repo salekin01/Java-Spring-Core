@@ -8,7 +8,7 @@ public class Employee {
 	
 	//Methods
 	public Employee() {
-		
+		System.out.println("--Employee object constructed--");
 	}
 
 	public Employee(int eid, String ename, String eaddress) {
@@ -47,4 +47,11 @@ public class Employee {
 		return "Employee [eid=" + eid + ", ename=" + ename + ", eaddress=" + eaddress + "]";
 	}
 	
+	public void myInit() {
+		System.out.println("--Object Initialized");
+	}
+	
+	public void myDestroy() {
+		System.out.println("--Object Destroyed");
+	}
 }

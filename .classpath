@@ -6,10 +6,11 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-core-5.1.9.RELEASE.jar">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-aop-5.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-beans-5.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-context-5.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-core-5.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/spring-expression-5.1.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/salekin/eclipse-workspace/JavaSprintCore/lib/org.apache.commons.logging_1.2.0.v20180409-1502.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
