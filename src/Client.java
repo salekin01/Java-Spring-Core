@@ -10,7 +10,7 @@ public class Client {
 		Employee eRef = new Employee();
 		eRef.setEid(557731);
 		eRef.setEname("Salekin");
-		eRef.setEaddress("RitterStraﬂe");		
+		eRef.setEaddress(new Address("chemnitz", "Saxony",9111));		
 		System.out.println("Employee Details:" + eRef);	
 		
 		// Spring Way | IOC (Inversion of Control)

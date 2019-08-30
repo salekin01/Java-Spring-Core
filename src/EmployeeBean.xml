@@ -11,13 +11,21 @@
 		<bean id="emp1" class="Employee" init-method="myInit" destroy-method="myDestroy">
 			<property name="eid" value="101"/>	
 			<property name="ename" value="Salekin"/>		
-			<property name="eaddress" value="TUC"/>			
+			<constructor-arg ref="addr"/>
+			<property name="eaddress" ref="addr"/>				
 		</bean>	
 		<bean id="emp2" class="Employee">
 			<property name="eid" value="102"/>	
 			<property name="ename" value="Prova"/>		
-			<property name="eaddress" value="TUD"/>			
-		</bean>	   					   
+			<constructor-arg ref="addr"/>	                    <!-- constructor injection -->
+	   		<!-- <property name="eaddress" ref="addr"/>	-->		<!-- setter injection -->
+		</bean>	  
+		<bean id="addr" class="Address">
+			<property name="city" value="Chemnitz"/>	
+			<property name="state" value="Saxony"/>		
+			<property name="zipCode" value="9111"/>		
+			<!-- <property name="eaddress" ref="addr"/> -->
+		</bean>	  					   
 	   					   
 </beans>
 	   					   

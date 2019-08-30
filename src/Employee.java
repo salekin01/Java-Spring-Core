@@ -4,17 +4,22 @@ public class Employee {
 	//Attributes
 	int eid;
 	String ename;
-	String eaddress;
+	Address eaddress;
 	
 	//Methods
 	public Employee() {
 		System.out.println("--Employee object constructed--");
 	}
-
-	public Employee(int eid, String ename, String eaddress) {
-
+	
+	//Dependency injection used by developer
+	public Employee(int eid, String ename, Address eaddress) {
 		this.eid = eid;
 		this.ename = ename;
+		this.eaddress = eaddress;
+	}
+	
+	//Dependency injection used by IOC
+	public Employee(Address eaddress) {
 		this.eaddress = eaddress;
 	}
 
@@ -33,12 +38,13 @@ public class Employee {
 	public void setEname(String ename) {
 		this.ename = ename;
 	}
-
-	public String getEaddress() {
+	
+	public Address getEaddress() {
 		return eaddress;
 	}
 
-	public void setEaddress(String eaddress) {
+	//setter injection
+	public void setEaddress(Address eaddress) {
 		this.eaddress = eaddress;
 	}
 
@@ -46,12 +52,12 @@ public class Employee {
 	public String toString() {
 		return "Employee [eid=" + eid + ", ename=" + ename + ", eaddress=" + eaddress + "]";
 	}
-	
+
 	public void myInit() {
-		System.out.println("--Object Initialized");
+		System.out.println("--Object Initialized--");
 	}
 	
 	public void myDestroy() {
-		System.out.println("--Object Destroyed");
+		System.out.println("--Object Destroyed--");
 	}
 }
