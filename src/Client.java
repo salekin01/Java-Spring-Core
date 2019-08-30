@@ -38,9 +38,5 @@ public class Client {
 		
 		ClassPathXmlApplicationContext cxt = (ClassPathXmlApplicationContext)context;
 		cxt.close(); // close the context
-		
-		
-		
-		
 	}
 }
